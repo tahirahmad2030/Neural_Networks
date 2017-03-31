@@ -1,3 +1,4 @@
+# This program learns weights for logical AND operator
 import numpy as np
 import pandas as pd
 
@@ -29,35 +30,23 @@ for e in range(epochs):
     #print del_w
     i=0
     for x in (data):
-        #print x
+        
         y= targets[i]
         output = (np.dot(x, weights))
-        #print output
-        # The error, the target minus the network output
+        
         error = y - output
-        #print error
-        #print output
-        # The error term
-        #   Notice we calulate f'(h) here instead of defining a separate
-        #   sigmoid_prime function. This just makes it faster because we
-        #   can re-use the result of the sigmoid function stored in
-        #   the output variable
+        
         error_term = error * output * (1 - output)
         
-        #print error_term
-        #print        
-# The gradient descent step, the error times the gradient times the inputs
-        #for i, j in zip(del_w, x):
-         #   i = i + error_term*j
-            
+        
         del_w += error_term * x
-        #print del_w
+        
         i+=1
     weights += learnrate * del_w / 4
         
 print weights
 
-#Testing the weights, We suppose that the bias is negation twice the weights(-2*weights) 
+#Testing the weights, We suppose that the bias is negation the weights(-weights) 
 test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
 correct_outputs = [False, False, False, True]
 outputs = []
