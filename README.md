@@ -11,5 +11,5 @@ This project requires Python 2.7, Pandas, Numpy.
 In a terminal or command window, navigate to the top-level project directory
 
 ```python and.py```
-```
+
 ```python gradiant.py```
