@@ -12,4 +12,4 @@ In a terminal or command window, navigate to the top-level project directory
 
 ```python and.py```
 
-```python gradiant.py```
+```python gradiant.py``` etc
