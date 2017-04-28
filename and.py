@@ -1,3 +1,4 @@
+#This file contains the code for logical AND operation 
 import pandas as pd
 
 # TODO: Set weight1, weight2, and bias
