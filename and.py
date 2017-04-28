@@ -2,9 +2,9 @@
 import pandas as pd
 
 # TODO: Set weight1, weight2, and bias
-weight1 = 1
-weight2 = 1
-bias = -2
+weight1 = 2
+weight2 = 2
+bias = -4
 
 
 # DON'T CHANGE ANYTHING BELOW
