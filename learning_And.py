@@ -1,5 +1,6 @@
 # This program learns weights for logical AND operator
 # This file learns weights automatically using Gradient Decend
+# commit
 import numpy as np
 import pandas as pd
 
